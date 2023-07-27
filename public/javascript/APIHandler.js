@@ -4,7 +4,7 @@ class APIHandler {
   }
 
  async getFullList  ()   {
-        const response = await axios.get("http://127.1.1.0:8000/characters")
+        const response = await axios.get("http://localhost:8000/characters")
 
   if (response.status === 200) {
     return response.data
@@ -16,9 +16,7 @@ class APIHandler {
 
     if (response.status === 200) {
       return response.data
-
       }
-
   }
 
   async createOneRegister (characterInfo) {
